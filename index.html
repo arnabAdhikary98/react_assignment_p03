@@ -18,23 +18,28 @@
 
     let rootEle = document.getElementById('root')
 
+    // adding a alert massage to the button called 'alert hello'
     function buttonClicked(){
         alert("Hello")
     }
 
+    // adding styling to div container
     const divStyle = {
         height : '80px',
         weight: '200px',
         textAlign : "center",
     }
 
+    // adding styling to button
     const btnStyle = {
         height : "40px",
         width : "80px",
     }
 
     let container = (
+        // using react.fragment to make a container without using a div tag
         <>
+        {/* adding inline styling*/}
         <p style={{textAlign : "center", fontSize : "30px", fontWeight : "bold"}}>React is a javascript library</p>
         <div className="main" style={divStyle}>
             <p>Click the below button to alert 'Hello'</p>
